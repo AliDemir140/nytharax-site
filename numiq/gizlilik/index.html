@@ -23,13 +23,13 @@
 <h2>1.2 Hangi verileri işliyoruz</h2>
 <div class="tw"><table>
 <tr><th>Veri</th><th>Ne zaman</th><th>Ne için</th></tr>
-<tr><td>E-posta adresi</td><td>Üye hesabı açtığında</td><td>Hesap, doğrulama kodu, şifre sıfırlama, destek</td></tr>
-<tr><td>Şifre</td><td>Üye hesabı açtığında</td><td>Giriş. Düz metin olarak saklanmaz, şifre özetleme yöntemiyle korunur</td></tr>
-<tr><td>Takma ad</td><td>Hesap açılınca (otomatik “Oyuncu1234” gibi bir ad atanır, sonra değiştirebilirsin)</td><td>Maçlarda diğer oyunculara görünen ad</td></tr>
-<tr><td>Hesap kimliği (rastgele)</td><td>Her hesap için, misafir dahil</td><td>Hesabı sistemde tanımak</td></tr>
-<tr><td>Oyun verisi</td><td>Online oynarken</td><td>Odalar, maçlar, tahminler ve geri bildirimler, gizli sayılar (maç boyunca yalnızca sunucuda tutulur, maç bitince iki oyuncuya açılır), sonuçlar, puan, oynanan maç sayısı, maç sırasındaki bağlantı durumu</td></tr>
-<tr><td>Teknik kayıtlar</td><td>Sunucuya yapılan her istekte</td><td>IP adresi, zaman ve hata kayıtları. Güvenlik, kötüye kullanımı önleme ve hata ayıklama için; hizmet sağlayıcıların altyapısında kendi saklama süreleri içinde (Supabase’te günler, Resend’de 30 güne kadar) tutulur</td></tr>
-<tr><td>Cihazında saklananlar</td><td>Her zaman</td><td>Tema tercihi, tek kişilik oyun rekorların ve oturum bilgisi. Rekorlar ve tema yalnızca telefonundadır, sunucuya gönderilmez</td></tr>
+<tr><td data-label="Veri">E-posta adresi</td><td data-label="Ne zaman">Üye hesabı açtığında</td><td data-label="Ne için">Hesap, doğrulama kodu, şifre sıfırlama, destek</td></tr>
+<tr><td data-label="Veri">Şifre</td><td data-label="Ne zaman">Üye hesabı açtığında</td><td data-label="Ne için">Giriş. Düz metin olarak saklanmaz, şifre özetleme yöntemiyle korunur</td></tr>
+<tr><td data-label="Veri">Takma ad</td><td data-label="Ne zaman">Hesap açılınca (otomatik “Oyuncu1234” gibi bir ad atanır, sonra değiştirebilirsin)</td><td data-label="Ne için">Maçlarda diğer oyunculara görünen ad</td></tr>
+<tr><td data-label="Veri">Hesap kimliği (rastgele)</td><td data-label="Ne zaman">Her hesap için, misafir dahil</td><td data-label="Ne için">Hesabı sistemde tanımak</td></tr>
+<tr><td data-label="Veri">Oyun verisi</td><td data-label="Ne zaman">Online oynarken</td><td data-label="Ne için">Odalar, maçlar, tahminler ve geri bildirimler, gizli sayılar (maç boyunca yalnızca sunucuda tutulur, maç bitince iki oyuncuya açılır), sonuçlar, puan, oynanan maç sayısı, maç sırasındaki bağlantı durumu</td></tr>
+<tr><td data-label="Veri">Teknik kayıtlar</td><td data-label="Ne zaman">Sunucuya yapılan her istekte</td><td data-label="Ne için">IP adresi, zaman ve hata kayıtları. Güvenlik, kötüye kullanımı önleme ve hata ayıklama için; hizmet sağlayıcıların altyapısında kendi saklama süreleri içinde (Supabase’te günler, Resend’de 30 güne kadar) tutulur</td></tr>
+<tr><td data-label="Veri">Cihazında saklananlar</td><td data-label="Ne zaman">Her zaman</td><td data-label="Ne için">Tema tercihi, tek kişilik oyun rekorların ve oturum bilgisi. Rekorlar ve tema yalnızca telefonundadır, sunucuya gönderilmez</td></tr>
 </table></div>
 <p><b>Misafir hesaplar</b> e-posta adresi içermez, yalnızca rastgele kimlik ve otomatik takma ad vardır.</p>
 <p><b>Toplamadıklarımız:</b> konum, rehber, fotoğraf, mikrofon, ödeme bilgisi ve reklam kimliği. Şu anda reklam ya da analitik aracı kullanmıyoruz.</p>
@@ -56,10 +56,10 @@
 <p>Aşağıdaki hizmet sağlayıcılar verileri bizim adımıza işler:</p>
 <div class="tw"><table>
 <tr><th>Sağlayıcı</th><th>Ne için</th><th>Nerede</th></tr>
-<tr><td>Supabase</td><td>Veritabanı, hesap ve giriş, sunucu fonksiyonları</td><td>AB (Frankfurt, Almanya)</td></tr>
-<tr><td>Resend</td><td>Doğrulama ve şifre sıfırlama e-postalarının gönderimi</td><td>ABD (gönderim bölgesi İrlanda olsa da hesap ve e-posta kayıtları ABD’de tutulur)</td></tr>
-<tr><td>Porkbun</td><td>Alan adı ve destek e-postalarının yönlendirilmesi</td><td>Porkbun LLC (destek e-postaları yönlendirme sırasında Porkbun sunucularından geçer)</td></tr>
-<tr><td>GitHub (Pages)</td><td>Bu web sitesinin barındırılması</td><td>ABD (GitHub, Inc.); ziyaretçi IP adresleri güvenlik amacıyla kaydedilir</td></tr>
+<tr><td data-label="Sağlayıcı">Supabase</td><td data-label="Ne için">Veritabanı, hesap ve giriş, sunucu fonksiyonları</td><td data-label="Nerede">AB (Frankfurt, Almanya)</td></tr>
+<tr><td data-label="Sağlayıcı">Resend</td><td data-label="Ne için">Doğrulama ve şifre sıfırlama e-postalarının gönderimi</td><td data-label="Nerede">ABD (gönderim bölgesi İrlanda olsa da hesap ve e-posta kayıtları ABD’de tutulur)</td></tr>
+<tr><td data-label="Sağlayıcı">Porkbun</td><td data-label="Ne için">Alan adı ve destek e-postalarının yönlendirilmesi</td><td data-label="Nerede">Porkbun LLC (destek e-postaları yönlendirme sırasında Porkbun sunucularından geçer)</td></tr>
+<tr><td data-label="Sağlayıcı">GitHub (Pages)</td><td data-label="Ne için">Bu web sitesinin barındırılması</td><td data-label="Nerede">ABD (GitHub, Inc.); ziyaretçi IP adresleri güvenlik amacıyla kaydedilir</td></tr>
 </table></div>
 <p>Yasal zorunluluk halinde yetkili makamlarla paylaşım yapılabilir. Uygulamayı dağıtan mağazalar (Apple, Google) kendi gizlilik politikalarına tabidir.</p>
 
@@ -86,7 +86,7 @@
 <p>Bu politikayı güncelleyebiliriz. Önemli değişiklikleri uygulamada ya da sitede duyururuz, güncel sürümün tarihi yukarıda yazar.</p>
 </div></main>
 <footer class="site"><div class="wrap">
-<p><a href="../../numiq/gizlilik/">Gizlilik Politikası</a><a href="../../numiq/aydinlatma/">KVKK Aydınlatma</a><a href="../../numiq/sartlar/">Kullanım Şartları</a><a href="../../numiq/hesap-silme/">Hesap ve Veri Silme</a></p>
+<p class="links"><a href="../../numiq/gizlilik/">Gizlilik Politikası</a><a href="../../numiq/aydinlatma/">KVKK Aydınlatma</a><a href="../../numiq/sartlar/">Kullanım Şartları</a><a href="../../numiq/hesap-silme/">Hesap ve Veri Silme</a></p>
 <p>İletişim: <a href="mailto:destek@nytharax.com">destek@nytharax.com</a><br>© 2026 Nytharax</p>
 </div></footer>
 </body>
