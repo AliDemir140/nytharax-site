@@ -37,6 +37,8 @@ footer.site .wrap{padding-top:18px;padding-bottom:28px}
 footer.site a{margin-right:14px}
 footer.site .links{display:flex;flex-wrap:wrap;gap:4px 14px}
 footer.site .links a{margin-right:0}
+footer.site .wrap{text-align:center}
+footer.site .links{justify-content:center}
 
 :root{--hit-bg:#d3f0de;--hit-fg:#0f5f33;--near-bg:#fbeab8;--near-fg:#6e4a00;--tile:#e7ecf6;--tile-line:#c9d3e3;--win:#1a7d44}
 @media (prefers-color-scheme:dark){:root{--hit-bg:#14402b;--hit-fg:#6fe0a0;--near-bg:#3b3210;--near-fg:#f3cf55;--tile:#1e2d49;--tile-line:#2c3f61;--win:#3fcf82}}
