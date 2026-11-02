@@ -27,7 +27,7 @@
 <tr><td data-label="Veri">Şifre</td><td data-label="Ne zaman">Üye hesabı açtığında</td><td data-label="Ne için">Giriş. Düz metin olarak saklanmaz, şifre özetleme yöntemiyle korunur</td></tr>
 <tr><td data-label="Veri">Takma ad</td><td data-label="Ne zaman">Hesap açılınca (otomatik “Oyuncu1234” gibi bir ad atanır, sonra değiştirebilirsin)</td><td data-label="Ne için">Maçlarda diğer oyunculara görünen ad</td></tr>
 <tr><td data-label="Veri">Hesap kimliği (rastgele)</td><td data-label="Ne zaman">Her hesap için, misafir dahil</td><td data-label="Ne için">Hesabı sistemde tanımak</td></tr>
-<tr><td data-label="Veri">Oyun verisi</td><td data-label="Ne zaman">Online oynarken</td><td data-label="Ne için">Odalar, maçlar, tahminler ve geri bildirimler, gizli sayılar (maç boyunca yalnızca sunucuda tutulur, maç bitince iki oyuncuya açılır), sonuçlar, puan, oynanan maç sayısı, maç sırasındaki bağlantı durumu</td></tr>
+<tr><td data-label="Veri">Oyun verisi</td><td data-label="Ne zaman">Online oynarken</td><td data-label="Ne için">Odalar, maçlar, tahminler ve geri bildirimler, günlük meydan okuma tahminleri, gizli sayılar (maç boyunca yalnızca sunucuda tutulur, maç bitince iki oyuncuya açılır), sonuçlar, puan, oynanan maç sayısı, maç sırasındaki bağlantı durumu</td></tr>
 <tr><td data-label="Veri">Teknik kayıtlar</td><td data-label="Ne zaman">Sunucuya yapılan her istekte</td><td data-label="Ne için">IP adresi, zaman ve hata kayıtları. Güvenlik, kötüye kullanımı önleme ve hata ayıklama için; hizmet sağlayıcıların altyapısında kendi saklama süreleri içinde (Supabase’te günler, Resend’de 30 güne kadar) tutulur</td></tr>
 <tr><td data-label="Veri">Cihazında saklananlar</td><td data-label="Ne zaman">Her zaman</td><td data-label="Ne için">Tema, titreşim ve ses tercihleri, tek kişilik oyun rekorların ve oturum bilgisi. Rekorlar ve tercihler yalnızca telefonundadır, sunucuya gönderilmez</td></tr>
 </table></div>
@@ -68,7 +68,7 @@
 
 <h2>1.7 Saklama ve silme</h2>
 <p>Verilerini hesabın açık olduğu sürece saklarız. Hesabını istediğin zaman silebilirsin: Ayarlar → Hesabı sil. Silme anında ve kalıcıdır. Ayrıntılar için <a href="../hesap-silme/">Hesap ve Veri Silme</a> sayfasına bak.</p>
-<p><b>Silinenler:</b> hesabın, e-posta adresin, takma adın, puanların ve sıralamadaki yerin, kuyruk ve bağlantı kayıtların, sana ait gizli sayı kayıtları.</p>
+<p><b>Silinenler:</b> hesabın, e-posta adresin, takma adın, puanların ve sıralamadaki yerin, kuyruk ve bağlantı kayıtların, sana ait gizli sayı kayıtları ve günlük meydan okuma tahminlerin.</p>
 <p><b>Kalanlar:</b> Rakiplerinle oynadığın bitmiş maçların kaydı, rakiplerin geçmişi bozulmasın diye kalır. Bu kayıtlarda kimliğin rastgele bir kimlikle değiştirilir ve adın “Silinmiş oyuncu” olarak görünür.</p>
 <p>Hizmet sağlayıcıların teknik kayıtları kendi saklama sürelerine göre silinir (Supabase’te günler, Resend’de 30 güne kadar).</p>
 
